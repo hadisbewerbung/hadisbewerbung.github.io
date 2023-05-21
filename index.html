@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hadi's Bewerbung</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <section id="banner">
+            <div class="banner-text">
+                <h1>Meine Bewerbung als Plattformentwickler</h1>
+                <p>von Hadi Cherkaoui</p>
+                <div class="banner-btn">
+                    <a href="lebenslauf.html"><span></span>Lebenslauf</a>
+                    <a href="schreiben.html"><span></span>Bewerbungsschreiben</a>
+                    <a href="#"><span></span>Weitere Dokumente</a>
+                </div>
+            </div>
+        </section>
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mein Server</a></li>
+                    <li><a href="#">Wieso mich?</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="bild/menu.png" id="menu1" alt="">
+        </div>
+
+        <section id="server">
+            <div class="title-text">
+                <p>Mein Server</p>
+            </div>                                         ich war hier das letzte mal
+        </section>
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var nav = document.getElementById("nav")
+            var menu = document.getElementById("menu")
+
+            nav.style.right = "-250px"
+
+            menubtn.onclick = function(){
+                if(nav.style.right == "-250px"){
+                    nav.style.right = "0";
+                }
+                else{
+                    nav.style.right = "-250px";
+                }
+            }
+        </script>
+    </body>
+
+</html>
